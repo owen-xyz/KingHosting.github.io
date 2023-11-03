@@ -1,0 +1,143 @@
+*,
+h1,
+h2,
+p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    color: #313436;
+}
+
+main {
+    width: 100%;
+}
+
+/* header */
+header {
+    background-color: #FBF0B2;
+    width: 100%;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.logo{
+    height: 35px;
+    padding-right: 10px;
+} 
+.nav-div{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    padding:5px 10px;
+    color: #979797;
+}
+nav a:hover{
+    color: #313436;
+}
+.f-icon {
+    padding: 0px 5px;
+}
+
+.container-f-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* header end */
+
+.section-1 {
+    background-image: url(../img/backround_section_1.png);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:fit-content;
+}
+
+
+article {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px 0;
+}
+
+article div{
+    padding: 10px;
+}
+
+article h1,
+h2,
+p {
+    padding:0 0 20px 0;
+}
+article p{
+    font-size: 25px;
+    color: #979797;
+}
+article h1{
+    font-size: 30px;
+}
+article h2{
+    font-size: 30px;
+}
+
+.section-1 img {
+    right: 0;
+    animation: geserKiri 1.5s ease-in-out;
+    max-width: 430px;
+    -webkit-animation: geserKiri 1.5s ease-in-out;
+    position: relative;
+}
+.text-section-1{
+    left: 0;
+    animation: geserKanan 1.5s ease-in-out;
+    position: relative;
+    -webkit-animation: geserKanan 1.5s ease-in-out;
+}
+@keyframes geserKiri{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right:0;
+    }
+}
+@keyframes geserKanan{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left:0;
+    }
+}
+.section-2 {
+    width: 100%;
+    background-position: cover;
+    background-size: contain;
+}
+.section-3 {
+    padding-top: 100px;
+    width: 100%;
+    background-image: url(../img/backround_section_2\ .png);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
